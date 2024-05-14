@@ -2,7 +2,7 @@
 	@author      harsh-dhamecha
 	@email       harshdhamecha10@gmail.com
 	@create date 08-08-2023 11:02:24
-	@modify date 26-10-2023 13:29:19
+	@modify date 14-05-2024 16:40:47
 	@desc        A script to scrape vehicle images from opensooq.
 """
 
@@ -104,8 +104,8 @@ class OpensooqScraper(object):
 def parse_args():
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--driver-path', type=str, default='../../extras/geckodriver-v0.33.0-linux32/geckodriver', help='downloaded images save directory')
-    parser.add_argument('--save-dir', type=str, default='/media/harsh/Data/LPR/data/scraped/opensooq/KSA', help='downloaded images save directory')
+    parser.add_argument('--driver-path', type=str, default='', help='downloaded images save directory')
+    parser.add_argument('--save-dir', type=str, default='./images', help='downloaded images save directory')
     parser.add_argument('--base-url', type=str, default='https://sa.opensooq.com/en/cars/cars-for-sale', help='an internet archive url')
     parser.add_argument('--short-wait', type=int, default=5, help='shorter waits in seconds')
     parser.add_argument('--name', type=str, default='Saudi-Arabia', help='country name whose data to be scraped')

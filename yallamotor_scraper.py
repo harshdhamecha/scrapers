@@ -2,7 +2,7 @@
 	@author      harsh-dhamecha
 	@email       harshdhamecha10@gmail.com
 	@create date 29-08-2023 09:02:43
-	@modify date 29-08-2023 11:39:54
+	@modify date 14-05-2024 16:41:24
 	@desc        A script to scrape vehicles images from Yallamotor.com
 """
 
@@ -103,8 +103,8 @@ class YallamotorScraper(object):
 def parse_args():
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--driver-path', type=str, default='../../extras/geckodriver-v0.33.0-linux32/geckodriver', help='downloaded images save directory')
-    parser.add_argument('--save-dir', type=str, default='/media/harsh/Data/LPR/data/scraped/yallamotor', help='downloaded images save directory')
+    parser.add_argument('--driver-path', type=str, default='', help='downloaded images save directory')
+    parser.add_argument('--save-dir', type=str, default='./images', help='downloaded images save directory')
     parser.add_argument('--base-url', type=str, default='https://oman.yallamotor.com/used-cars/', help='an internet archive url')
     parser.add_argument('--short-wait', type=int, default=5, help='shorter waits in seconds')
     parser.add_argument('--name', type=str, default='Oman', help='country name whose data to be scraped')

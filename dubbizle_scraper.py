@@ -2,7 +2,7 @@
 	@author      harsh-dhamecha
 	@email       harshdhamecha10@gmail.com
 	@create date 29-08-2023 10:02:27
-	@modify date 14-05-2024 16:32:51
+	@modify date 14-05-2024 16:40:25
 	@desc        A script to scape vehicle images from dubbizle.com
 """
 
@@ -104,8 +104,8 @@ class DubbizleScraper(object):
 def parse_args():
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--driver-path', type=str, default='../../extras/geckodriver-v0.33.0-linux32/geckodriver', help='downloaded images save directory')
-    parser.add_argument('--save-dir', type=str, default='/media/harsh/Data/LPR/data/scraped/dubbizle', help='downloaded images save directory')
+    parser.add_argument('--driver-path', type=str, default='', help='downloaded images save directory')
+    parser.add_argument('--save-dir', type=str, default='./images', help='downloaded images save directory')
     parser.add_argument('--base-url', type=str, default='https://www.dubizzle.com.om/en/vehicles/cars/', help='an internet archive url')
     parser.add_argument('--short-wait', type=int, default=5, help='shorter waits in seconds')
     parser.add_argument('--name', type=str, default='Oman', help='country name whose data to be scraped')

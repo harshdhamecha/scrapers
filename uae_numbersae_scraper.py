@@ -2,7 +2,7 @@
 	@author      harsh-dhamecha
 	@email       harshdhamecha10@gmail.com
 	@create date 23-05-2023 12:08:44
-	@modify date 23-05-2023 15:32:19
+	@modify date 14-05-2024 16:41:07
 	@desc        A script to scrape license plates data from numbers.ae for UAE
 """
 
@@ -142,8 +142,8 @@ class NumbersUAEScraper(object):
 def parse_args():
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('--driver-path', type=str, default='../../extras/geckodriver-v0.33.0-linux32/geckodriver', help='downloaded images save directory')
-    parser.add_argument('--save-dir', type=str, default='../../data/v2/countries/images/UAE/scraped/', help='downloaded images save directory')
+    parser.add_argument('--driver-path', type=str, default='', help='downloaded images save directory')
+    parser.add_argument('--save-dir', type=str, default='./images', help='downloaded images save directory')
     parser.add_argument('--base-url', type=str, default='https://www.numbers.ae/plate', help='an internet archive url')
     parser.add_argument('--short-wait', type=int, default=5, help='shorter waits in seconds')
     parser.add_argument('--emirate', type=str, help='emirate name whose data to be scraped')
